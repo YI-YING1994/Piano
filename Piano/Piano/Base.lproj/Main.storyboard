@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Piano" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gv0-kZ-lIW">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8Q-It-p2Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="C3" backgroundImage="white">
+                                            <color key="titleColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25e-B6-S8j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwL-Jy-eQN">
+                                        <rect key="frame" x="92" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="D" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B05-Rb-cuz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtN-m8-uCE">
+                                        <rect key="frame" x="184" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="E" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uL-CC-Mev"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYv-LM-onl">
+                                        <rect key="frame" x="276" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="F" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEr-Lc-vde"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leD-PV-JEn">
+                                        <rect key="frame" x="368" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="G" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVu-Ps-vrP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-97-Y9g">
+                                        <rect key="frame" x="460" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="A" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63f-ug-6uv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-FN-p8j">
+                                        <rect key="frame" x="552" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="B" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qz-Yi-Qq7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWQ-bD-M6T">
+                                        <rect key="frame" x="644" y="0.0" width="92" height="414"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="C4" backgroundImage="white">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5jr-Ij-hL6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNf-T7-hL1">
+                                <rect key="frame" x="59.666666666666657" y="0.0" width="65" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="5QY-aG-VsX"/>
+                                    <constraint firstAttribute="height" constant="270" id="urQ-ec-vQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="C#" backgroundImage="black"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LjD-CV-kRy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62X-lY-I2o">
+                                <rect key="frame" x="151.66666666666666" y="0.0" width="65" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="43m-dC-a75"/>
+                                    <constraint firstAttribute="width" constant="65" id="Vmb-uK-mLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="D#" backgroundImage="black"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCM-aZ-UM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJg-fc-wpi">
+                                <rect key="frame" x="335.66666666666669" y="0.0" width="65" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="aCK-zF-zy7"/>
+                                    <constraint firstAttribute="height" constant="270" id="bSH-Qs-FPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="F#" backgroundImage="black"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zK6-yE-yiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmj-OI-KOR">
+                                <rect key="frame" x="427.66666666666669" y="0.0" width="65" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="dch-79-MAX"/>
+                                    <constraint firstAttribute="width" constant="65" id="dvT-HU-2Zl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="G#" backgroundImage="black"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6OD-Ma-T5K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH0-eV-nn3">
+                                <rect key="frame" x="519.66666666666663" y="0.0" width="65" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="YyT-b0-TdU"/>
+                                    <constraint firstAttribute="width" constant="65" id="yuX-ap-Wch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="A#" backgroundImage="black"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69a-Ce-wS7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qJg-fc-wpi" firstAttribute="leading" secondItem="leD-PV-JEn" secondAttribute="leading" constant="-32.5" id="FUB-Xo-7dr"/>
+                            <constraint firstItem="62X-lY-I2o" firstAttribute="leading" secondItem="rtN-m8-uCE" secondAttribute="leading" constant="-32.5" id="NaW-lI-Bdt"/>
+                            <constraint firstItem="mmj-OI-KOR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pd4-Za-35J"/>
+                            <constraint firstItem="gv0-kZ-lIW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QNS-eB-vWl"/>
+                            <constraint firstItem="mmj-OI-KOR" firstAttribute="leading" secondItem="hA9-97-Y9g" secondAttribute="leading" constant="-32.5" id="W8W-4Z-dD5"/>
+                            <constraint firstItem="gv0-kZ-lIW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z6h-1h-MVZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gv0-kZ-lIW" secondAttribute="bottom" id="ZMK-6R-hPZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gv0-kZ-lIW" secondAttribute="trailing" id="jxW-kJ-7d0"/>
+                            <constraint firstItem="qJg-fc-wpi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qPg-gJ-Qwh"/>
+                            <constraint firstItem="TNf-T7-hL1" firstAttribute="leading" secondItem="rwL-Jy-eQN" secondAttribute="leading" constant="-32.5" id="tJw-Xe-MNd"/>
+                            <constraint firstItem="AH0-eV-nn3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uyu-cJ-H8e"/>
+                            <constraint firstItem="62X-lY-I2o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xcA-dm-o2f"/>
+                            <constraint firstItem="TNf-T7-hL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yPa-Eu-cXi"/>
+                            <constraint firstItem="AH0-eV-nn3" firstAttribute="leading" secondItem="Edh-FN-p8j" secondAttribute="leading" constant="-32.5" id="zbR-Ge-gjL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96.195652173913047" y="156.52173913043478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black" width="8.228571891784668" height="28.799999237060547"/>
+        <image name="white" width="12.342857360839844" height="47.314285278320312"/>
+    </resources>
+</document>
