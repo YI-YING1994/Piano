@@ -55,20 +55,18 @@ class ViewController: UIViewController {
                 }
             }
             if currentTouch != temp && temp != nil {
-                if currentTouch.subviews.count > 1 {
-                    currentTouch.subviews.last?.removeFromSuperview()
+                if currentTouch.isHighlighted {
+                    currentTouch.isHighlighted = false
                 }
                 currentTouch = temp
-                let view = UIView(frame: CGRect(x: 0, y: 0, width: currentTouch.frame.width, height: currentTouch.frame.height))
-                view.backgroundColor = #colorLiteral(red: 1, green: 0.6597909764, blue: 1, alpha: 0.5)
-                currentTouch.addSubview(view)
+                currentTouch.isHighlighted = true
                 currentTouch?.sendActions(for: .touchDown)
                 
             }
         }
         if sender.state == .ended {
-            if currentTouch.subviews.count > 1 {
-                currentTouch.subviews.last?.removeFromSuperview()
+            if currentTouch.isHighlighted {
+                currentTouch.isHighlighted = false
             }
         }
     }
